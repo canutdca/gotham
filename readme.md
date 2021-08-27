@@ -2,14 +2,14 @@
 Gracias a webpack, podemos programar con archivos de estilos y js separados y este hace "magia" y los pone en el html.
 
 # Que queremos hacer?
-1. Queremos usar scss en vez de css y typescript en vez de css
+1. Queremos usar scss en vez de css y typescript en vez de js
 2. Tener dos bundles distintos, uno para produccion (todo minificado, etc) y otro para desarrollar
 3. Queremos que, al pulsar en una pantalla, se navege en otra con el detalle del personaje (hardcoded) y que tenga sus estilos y js independientes
 
 # Equipos
-- Team loaders: Punto 1
-- Team bundles: Punto 2
-- Team character: Punto 3
+- Team loaders: Punto 1: MA, Jordi
+- Team bundles: Punto 2: Eugenia, Diego, Joaquin
+- Team character: Punto 3: Victor, Alvaro, Joan
 
 # Pistas
 1. Acordaros de los loaders, habrá que instalar cositas
