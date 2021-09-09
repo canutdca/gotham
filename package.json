@@ -1,10 +1,11 @@
 {
   "name": "web",
   "version": "1.0.0",
-  "description": "Gracias a webpack, podemos programar con archivos de estilos y js separados y este hace \"magia\" y los pone en el html.",
-  "main": "batman.js",
+  "description": "",
+  "main": "batman.ts",
   "scripts": {
-    "dev": "webpack serve --open --config webpack.config.js"
+    "start": "webpack serve --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,19 +15,14 @@
     "css-loader": "^6.2.0",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.2",
+    "sass": "^1.38.1",
+    "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
-    "webpack": "^5.47.1",
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.4.2",
+    "webpack": "^5.51.1",
     "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2"
-  },
-  "dependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/canutdca/gotham.git"
-  },
-  "keywords": [],
-  "bugs": {
-    "url": "https://github.com/canutdca/gotham/issues"
-  },
-  "homepage": "https://github.com/canutdca/gotham#readme"
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0"
+  }
 }
