@@ -8,12 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
-  mode: 'development',
-  devtool: 'inline-source-map',
   target: 'web',
-  devServer: {
-    contentBase: './dist',
-  },
   plugins: [
     new HtmlWebpackPlugin({
       template: 'index.html',
