@@ -1,3 +1,3 @@
-export function select(articleI: number ) {
-    window.location.replace("http://localhost:8080/batman.html")
+export function select(articleId: any) {
+    console.log('este es el personaje: ', articleId)
 }
