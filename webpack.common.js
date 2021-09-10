@@ -1,7 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
  
-let htmlPageNames = ['batman', 'alfred', 'catWoman'];
+let htmlPageNames = ['batman', 'alfred', 'catWoman', 'batcueva'];
 let multipleHtmlPlugins = htmlPageNames.map(name => {
     return new HtmlWebpackPlugin({
       template: `./${name}.html`, // relative path to the HTML files
@@ -16,6 +16,7 @@ module.exports = {
     batman: './src/pageBatman.ts',
     alfred: './src/pageAlfred.ts',
     catWoman: './src/pageCatWoman.ts',
+    batcueva: './src/pageBatcueva.ts'
   },
   output: {
     filename: '[name].entry.js',
