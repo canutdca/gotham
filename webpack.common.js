@@ -16,7 +16,7 @@ module.exports = {
     batman: './src/pageBatman.ts',
     alfred: './src/pageAlfred.ts',
     catWoman: './src/pageCatWoman.ts',
-},
+  },
   output: {
     filename: '[name].entry.js',
     path: path.resolve(__dirname, 'dist'),
@@ -36,9 +36,9 @@ module.exports = {
         loader: 'html-loader',
       },
       {
-        test: /\.tsx?$/,
-        use: 'ts-loader',
+        test: /\.(js|jsx|tsx|ts)$/,
         exclude: /node_modules/,
+        loader: 'babel-loader'
       },
       {
         test: /\.s[ac]ss$/i,
@@ -54,6 +54,6 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.ts']
+    extensions: ['.ts', '.js'],
   },
 }
